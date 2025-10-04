@@ -1,0 +1,13 @@
+#include <iostream>
+#include <unistd.h>
+using namespace std;
+int main() {
+    int n; cin >> n;
+    for (int i = n - 1; i > 0; i--) {
+        cout << i << (i == 1 ? " second remaining\n" : " seconds remaining\n");
+        sleep(1);
+    }
+    cout << "Stopped";
+
+    return 0;
+}
