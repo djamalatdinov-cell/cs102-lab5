@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int main() {
+
+    double rent = 1000, total = 0;
+    for (int year = 1; year <= 5; year++) {
+      rent *= 1.03;
+      cout << "Year " << year << " rent: " << rent << endl;
+      total += rent * 12;
+    }
+    cout << "Total rent for 5 years: " << total;
+
+    return 0;
+}
