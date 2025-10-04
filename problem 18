@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+int main() {
+ int n, d = 0, base = 1;
+    cin >> n;
+    while (n > 0) {
+        int bit = n % 10;
+        d += bit * base;
+        base *= 2;
+        n /= 10;
+    }
+    cout << "The decimal number is " << d;
+
+return 0;
+}
