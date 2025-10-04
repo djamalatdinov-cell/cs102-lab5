@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main() {
+ int n, pos = 0, neg = 0, total = 0, count = 0;
+
+    while (true) {
+        cin >> n;
+        if (n == 0) break;
+        if (n > 0) pos++;
+        else neg++;
+        total += n;
+        count++;
+    }
+    if (count > 0)
+        cout << "The number of positives is " << pos << "\nThe number of negatives is " << neg << "\nThe total is " << total << "\nThe average is " << (double)total / count;
+return 0;
+}
