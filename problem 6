@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int classNumber;
+    cout << "Please enter your class: ";
+    cin >> classNumber;
+    int sumCredit=0;
+    double multi=0;
+    for (int i=classNumber; i>0; i--) {
+        double credit;
+        double mark;
+        cout<<"Please enter your credit: ";
+        cin >> credit;
+        cout<<"Please enter your mark: ";
+        cin>> mark;
+        sumCredit += credit;
+        multi += credit*mark;
+    }
+    double result = multi/sumCredit;
+    cout<<"Your GPA is: "<<result<<endl;
+
+    return 0;
+}
